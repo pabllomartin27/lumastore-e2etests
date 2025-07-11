@@ -6,7 +6,7 @@ Resource            ./actions.resource
 
 *** Variables ***
 ${BASE_URL}         https://loginxp.vercel.app
-${BROWSER}          chromium
+${BROWSER}          tantofaz
 ${IS_HEADLESS}      True
 
 *** Keywords ***
