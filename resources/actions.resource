@@ -9,7 +9,7 @@ Submit Credentials
 
     Fill Text    css=[name=user]    ${user}
     Fill Text    css=[name=pass]    ${pass}
-    Click    css=button >> text=Entrar
+    Click    css=button >> text=Sign In
 
 Toast have text
     [Arguments]    ${target}

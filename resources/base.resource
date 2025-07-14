@@ -5,7 +5,7 @@ Library             Browser
 Resource            ./actions.resource
 
 *** Variables ***
-${BASE_URL}         https://loginxp.vercel.app
+${BASE_URL}         https://magento.softwaretestingboard.com/customer/account/login
 ${BROWSER}          tantofaz
 ${IS_HEADLESS}      True
 

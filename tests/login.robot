@@ -8,23 +8,19 @@ Test Teardown       Finish Browser
 
 *** Test Cases ***
 Senha incorreta
-    Submit credentials         qa    123456
-    Toast have text    Oops! Credenciais inválidas :(
-
-Usuário não cadastrado
-    Submit credentials         teste123    123456
-    Toast have text    Oops! Credenciais inválidas :(
+    Submit credentials         soham.dean@example.com    123456
+    Toast have text    The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.
 
 Usuário deve ser obrigatório
     Submit credentials         ${EMPTY}    123456
-    Toast have text    Informe o seu nome de usuário!
+    Toast have text    This is a required field.
 
 Senha deve ser obrigatória
     Submit credentials         teste123    ${EMPTY}
-    Toast have text    Informe a sua senha secreta!
+    Toast have text    This is a required field.
 
 Login com sucesso
     [Tags]    smoke
 
-    Submit credentials      qa    xperience
-    Modal have text         Tudo certo!
+    Submit credentials      soham.dean@example.com    Sohamdean2025
+    Modal have text         Welcome, Soham Dean! 
